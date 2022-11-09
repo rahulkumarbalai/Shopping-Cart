@@ -2,7 +2,7 @@
 This sample application demonstrates a simple shopping cart built using React
 
 ## Demo
-- Demo hosted on Netlify: [Todos](https://rahulkumarbalai-shopping-cart.netlify.app/)
+- Demo hosted on Netlify: [Shopping Cart](https://rahulkumarbalai-shopping-cart.netlify.app/)
 
 # Build using
 - React
