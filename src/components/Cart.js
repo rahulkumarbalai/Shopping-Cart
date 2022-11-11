@@ -7,7 +7,7 @@ const Cart = () => {
     state: { cart },
     dispatch,
   } = CartState();
-  const [total, setTotal] = useState();
+  const [total, setTotal] = useState(0);
 
   useEffect(() => {
     setTotal(

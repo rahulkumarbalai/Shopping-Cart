@@ -6,7 +6,7 @@ import "../css/styles.css";
 export default function Shop() {
   const {
     state: { products },
-    productState: { sort, byStock, byFastDelivery },
+    productState: { sort, byStock, byFastDelivery, searchQuery },
   } = CartState();
 
   const applyFilters = () => {
@@ -23,6 +23,11 @@ export default function Shop() {
     if (byFastDelivery) {
       sortedProducts = sortedProducts.filter(
         (prod) => prod.productFastDelivery
+      );
+    }
+    if (searchQuery) {
+      sortedProducts = sortedProducts.filter((prod) =>
+        prod.productName.includes(searchQuery)
       );
     }
     return sortedProducts;
